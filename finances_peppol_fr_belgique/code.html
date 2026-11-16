@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-background": "#dfe2ee", "error-container": "#93000a", "on-tertiary-fixed": "#002113", "on-primary": "#472a00", "on-primary-fixed-variant": "#653e00", "on-primary-fixed": "#2a1700", "surface-container": "#1c2028", "primary-fixed-dim": "#ffb95f", "secondary-fixed": "#acedff", "background": "#0f131c", "inverse-primary": "#855300", "on-tertiary-fixed-variant": "#005236", "on-secondary": "#003640", "secondary": "#4cd7f6", "tertiary-fixed": "#6ffbbe", "on-tertiary-container": "#004e34", "on-tertiary": "#003824", "on-error-container": "#ffdad6", "on-surface-variant": "#d8c3ad", "on-error": "#690005", "primary-container": "#f59e0b", "surface": "#0f131c", "surface-container-low": "#181c24", "on-secondary-fixed": "#001f26", "secondary-fixed-dim": "#4cd7f6", "on-secondary-container": "#00424e", "on-primary-container": "#613b00", "surface-tint": "#ffb95f", "outline": "#a08e7a", "on-secondary-fixed-variant": "#004e5c", "error": "#ffb4ab", "surface-dim": "#0f131c", "tertiary": "#56e5a9", "surface-variant": "#31353e", "primary": "#ffc174", "primary-fixed": "#ffddb8", "outline-variant": "#534434", "tertiary-fixed-dim": "#4edea3", "inverse-surface": "#dfe2ee", "surface-bright": "#353942", "surface-container-high": "#262a33", "inverse-on-surface": "#2c3039", "on-surface": "#dfe2ee", "secondary-container": "#03b5d3", "surface-container-highest": "#31353e", "surface-container-lowest": "#0a0e16", "tertiary-container": "#30c88f" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-md": "1rem", "space-lg": "1.5rem", "space-xl": "2rem", "margin": "1rem", "gutter": "1rem", "space-xs": "0.25rem", "space-sm": "0.5rem" }, "fontFamily": { "label-numeric-lg": ["JetBrains Mono"], "body-lg": ["Hanken Grotesk"], "label-numeric-sm": ["JetBrains Mono"], "headline-md": ["Space Grotesk"], "headline-xl-mobile": ["Space Grotesk"], "headline-xl": ["Space Grotesk"], "headline-lg-mobile": ["Space Grotesk"], "label-numeric-md": ["JetBrains Mono"], "title-md": ["Hanken Grotesk"], "label-caps": ["Space Grotesk"], "headline-lg": ["Space Grotesk"], "body-sm": ["Hanken Grotesk"], "body-md": ["Hanken Grotesk"] }, "fontSize": { "label-numeric-lg": ["22px", { "lineHeight": "28px", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-numeric-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "headline-md": ["20px", { "lineHeight": "26px", "fontWeight": "600" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }], "headline-xl": ["36px", { "lineHeight": "44px", "fontWeight": "700" }], "headline-lg-mobile": ["22px", { "lineHeight": "28px", "fontWeight": "700" }], "label-numeric-md": ["15px", { "lineHeight": "20px", "fontWeight": "600" }], "title-md": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "label-caps": ["11px", { "lineHeight": "14px", "fontWeight": "700" }], "headline-lg": ["28px", { "lineHeight": "36px", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#0f131c;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><div class="w-9 h-9 rounded bg-surface-container-high flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-primary text-[20px]">roofing</span></div><div class="flex flex-col min-w-0"><span class="font-headline-md text-headline-md text-primary tracking-tight truncate leading-none">ToiturePro AI</span><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider truncate">Finances</span></div></div><div class="flex items-center gap-space-xs shrink-0"><div class="h-7 px-2 rounded bg-tertiary/15 text-tertiary flex items-center gap-1 shrink-0"><span class="material-symbols-outlined text-[14px]">verified_user</span><span class="font-label-numeric-sm text-label-numeric-sm leading-none">PEPPOL BE</span></div><button class="h-7 px-2 rounded bg-surface-container-high text-on-surface flex items-center gap-1 shrink-0 hover:bg-surface-container-highest transition-colors"><span class="font-label-numeric-sm text-label-numeric-sm leading-none">🇧🇪 FR</span><span class="material-symbols-outlined text-[14px] text-on-surface-variant">expand_more</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 px-margin bg-surface min-h-screen"><div class="flex flex-col w-full gap-space-lg">
+<!-- Bannière de Statut Peppol AS4 Live -->
+<div class="w-full bg-surface-container-high rounded-xl p-space-sm flex items-center justify-between shadow-md">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative flex items-center justify-center w-7 h-7 rounded bg-tertiary-container/20 text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[16px]">sync_alt</span>
+<span class="absolute -top-0.5 -right-0.5 w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-label-caps text-label-caps text-tertiary tracking-wider uppercase font-bold">POINT D'ACCÈS PEPPOL BE ACTIF</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant shrink-0"></span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface-variant truncate">AS4 e-Delivery</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Sync immédiate BOSA / Hermes certifiée</span>
+</div>
+</div>
+<div class="h-6 px-2 rounded bg-tertiary/20 text-tertiary flex items-center gap-1 shrink-0">
+<span class="material-symbols-outlined text-[13px]">bolt</span>
+<span class="font-label-caps text-label-caps uppercase">100% ONLINE</span>
+</div>
+</div>
+<!-- Métriques Financières Métier (Triptyque Bento Mobile) -->
+<div class="flex flex-col gap-space-sm">
+<!-- Métrique Principale: Facturé ce mois -->
+<div class="relative overflow-hidden bg-surface-container rounded-xl p-space-md shadow-md">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Facturé ce mois (Chantiers BE)</span>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="font-label-numeric-lg text-label-numeric-lg text-primary tracking-tight">142.800,00</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">€</span>
+</div>
+</div>
+<div class="h-8 px-2.5 rounded bg-tertiary/15 text-tertiary flex items-center gap-1 shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[15px]">trending_up</span>
+<span class="font-label-numeric-sm text-label-numeric-sm">+18.4% s/an</span>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[15px]">task_alt</span>
+<span class="font-body-sm text-body-sm">9 chantiers clos (Liège, Namur, Bxl)</span>
+</div>
+<span class="font-label-numeric-sm text-label-numeric-sm text-outline">TVA 6% incluse</span>
+</div>
+</div>
+<!-- Grille 2 Métriques Secondaires -->
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Créances Peppol -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase truncate">Créances Peppol</span>
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+</div>
+<div>
+<div class="font-label-numeric-md text-label-numeric-md text-on-surface">48.200,00 €</div>
+<span class="font-body-sm text-body-sm text-secondary truncate block mt-0.5">2 factures certifiées</span>
+</div>
+</div>
+<!-- Marge Nette Moyenne -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase truncate">Marge Nette Moy.</span>
+<span class="material-symbols-outlined text-primary text-[16px]">pie_chart</span>
+</div>
+<div>
+<div class="font-label-numeric-md text-label-numeric-md text-primary">28.4%</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate block mt-0.5">Matériaux: 102.600 €</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Boîte Technique Hub Peppol Belgique (AS4 / BOSA) -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-md">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-surface-container-highest flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[18px]">account_balance</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-md text-headline-md text-on-surface leading-tight truncate">Peppol Hub Belgique</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Réseau AS4 ASBL • Nœud Fédéral BOSA</span>
+</div>
+</div>
+<span class="h-6 px-2 rounded-full bg-tertiary/20 text-tertiary font-label-caps text-label-caps uppercase flex items-center gap-1 font-bold shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> ACTIF
+      </span>
+</div>
+<!-- Paramètres e-Invoicing Réglementaires -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-center justify-between py-1.5 bg-surface-container-low px-space-sm rounded">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Identifiant Peppol / BCE</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-primary tracking-wider font-semibold">0208:0845920192</span>
+</div>
+<div class="flex items-center justify-between py-1.5 bg-surface-container-low px-space-sm rounded">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Protocole d'Échange</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface">AS4 e-Delivery v2.1</span>
+</div>
+<div class="flex items-center justify-between py-1.5 bg-surface-container-low px-space-sm rounded">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Certificat Qualifié PKI</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-tertiary">Valable jusqu'en 11.2026</span>
+</div>
+<div class="flex items-center justify-between py-1.5 bg-surface-container-low px-space-sm rounded">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Accusés UPO (MLR Level)</span>
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-[14px]">done_all</span>
+<span class="font-label-numeric-sm text-label-numeric-sm font-bold">100% automatisés</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Boutons d'Action Rapide Chantiers -->
+<div class="flex flex-col gap-space-sm">
+<!-- Bouton Phare Ambre Industriel -->
+<button class="w-full min-h-[52px] bg-primary-container text-on-primary-container font-headline-md text-headline-md rounded-xl flex items-center justify-center gap-space-sm active:bg-primary-fixed-variant transition-transform active:scale-[0.99] shadow-lg">
+<span class="material-symbols-outlined text-[22px]">auto_fix_high</span>
+<span class="font-bold">+ Nouvelle Facture depuis le Métré IA</span>
+</button>
+<!-- Actions Secondaires Utilitaires -->
+<div class="grid grid-cols-2 gap-space-sm">
+<button class="min-h-[48px] bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-title-md text-body-md rounded-xl flex items-center justify-center gap-1.5 px-space-sm transition-colors shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">download_for_offline</span>
+<span class="truncate">UBL BIS 3.0</span>
+</button>
+<button class="min-h-[48px] bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-title-md text-body-md rounded-xl flex items-center justify-center gap-1.5 px-space-sm transition-colors shadow-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">inbox</span>
+<span class="truncate">File Hermes</span>
+</button>
+</div>
+</div>
+<!-- Assistant Fiscal Régional (Bannière Délicate & Utile) -->
+<div class="bg-surface-container-high rounded-xl p-space-md flex items-start gap-space-sm shadow-md">
+<div class="w-8 h-8 rounded bg-secondary-container/20 text-secondary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">smart_toy</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider">Assistant IA Fiscal Wallonie</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-outline-variant">Loi 2026</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
+        Conformité certifiée : taux de TVA réduit 6% appliqué aux rénovations privées (&gt;10 ans). Mandat Peppol B2B vérifié pour toutes les factures pro.
+      </p>
+<div class="mt-space-sm">
+<button class="h-7 px-3 rounded bg-surface-container text-secondary font-label-caps text-label-caps uppercase flex items-center gap-1 hover:bg-surface-bright transition-colors shadow-sm">
+<span>Consulter le rapport fiscal</span>
+<span class="material-symbols-outlined text-[13px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Sélecteur d'Onglets de Filtrage Tactiles -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">Documents &amp; Flux EDI</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface-variant">32 dossiers</span>
+</div>
+<!-- Scroll horizontal fluide pour les onglets -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 no-scrollbar -mx-margin px-margin">
+<button class="h-9 px-4 rounded-full bg-primary text-on-primary font-headline-md text-body-sm font-semibold shrink-0 shadow-sm flex items-center gap-1.5">
+<span>Tous</span>
+<span class="h-5 px-1.5 rounded-full bg-on-primary/20 text-on-primary font-label-numeric-sm text-label-numeric-sm">32</span>
+</button>
+<button class="h-9 px-4 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-body-md text-body-sm shrink-0 flex items-center gap-1.5 transition-colors">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>Envoyés Peppol</span>
+</button>
+<button class="h-9 px-4 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-body-md text-body-sm shrink-0 flex items-center gap-1.5 transition-colors">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>En attente</span>
+</button>
+<button class="h-9 px-4 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-body-md text-body-sm shrink-0 flex items-center gap-1.5 transition-colors">
+<span>Brouillons</span>
+</button>
+</div>
+</div>
+<!-- Liste des Documents Récents -->
+<div class="flex flex-col gap-space-sm">
+<!-- Document 1: Facture Validée Peppol -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col gap-space-sm shadow-md">
+<!-- En-tête de carte -->
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-numeric-md text-label-numeric-md text-on-surface font-bold tracking-tight">FAC/2025/03/014</span>
+<span class="h-5 px-2 rounded-full bg-tertiary/20 text-tertiary font-label-caps text-label-caps uppercase flex items-center gap-1 shrink-0">
+<span class="material-symbols-outlined text-[12px]">done</span> PEPPOL VALIDÉ
+            </span>
+</div>
+<span class="font-body-md text-body-md text-on-surface font-medium truncate mt-0.5">Société Immobilière Wallonne</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-outline">BCE : BE 0845.392.019</span>
+</div>
+<div class="text-right shrink-0">
+<span class="font-label-numeric-md text-label-numeric-md text-tertiary font-bold block">84.500,00 €</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">TTC (21%)</span>
+</div>
+</div>
+<!-- Détail chantier & statut EDI -->
+<div class="bg-surface-container-low rounded p-space-sm flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-primary text-[15px] shrink-0">roofing</span>
+<span class="font-body-sm text-body-sm truncate">Rénovation toiture ardoises naturelles + corniches zinc</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant pt-0.5">
+<span class="font-body-sm text-body-sm flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-[13px]">cloud_done</span> Livré via réseau Peppol (BOSA)
+          </span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-outline">14 Mars 2025</span>
+</div>
+</div>
+<!-- Action Footer -->
+<button class="w-full min-h-[48px] bg-surface-container-high hover:bg-surface-container-highest text-tertiary rounded-lg font-title-md text-body-md flex items-center justify-center gap-1.5 transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Télécharger la preuve UPO (AS4 Receipt)</span>
+</button>
+</div>
+<!-- Document 2: Facture En Attente Client Particulier -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col gap-space-sm shadow-md">
+<!-- En-tête de carte -->
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-numeric-md text-label-numeric-md text-on-surface font-bold tracking-tight">FAC/2025/03/012</span>
+<span class="h-5 px-2 rounded-full bg-primary/20 text-primary font-label-caps text-label-caps uppercase flex items-center gap-1 shrink-0">
+<span class="material-symbols-outlined text-[12px]">schedule</span> EN ATTENTE
+            </span>
+</div>
+<span class="font-body-md text-body-md text-on-surface font-medium truncate mt-0.5">Client particulier • Namur Centre</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-outline">Attestation TVA 6% signée</span>
+</div>
+<div class="text-right shrink-0">
+<span class="font-label-numeric-md text-label-numeric-md text-primary font-bold block">12.300,00 €</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Reste dû</span>
+</div>
+</div>
+<!-- Détail chantier & alerte échéance -->
+<div class="bg-surface-container-low rounded p-space-sm flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[15px] shrink-0">handyman</span>
+<span class="font-body-sm text-body-sm truncate">Réparation étanchéité zinc et chéneaux mitoyens</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant pt-0.5">
+<span class="font-body-sm text-body-sm flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[13px]">alarm</span> Échéance dans 4 jours (22 Mars)
+          </span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-outline">Virement SEPA</span>
+</div>
+</div>
+<!-- Action Footer -->
+<button class="w-full min-h-[48px] bg-surface-container-high hover:bg-surface-container-highest text-primary rounded-lg font-title-md text-body-md flex items-center justify-center gap-1.5 transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Envoyer rappel bienveillant SMS/E-mail</span>
+</button>
+</div>
+<!-- Document 3: Devis Interactif Vue Client -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col gap-space-sm shadow-md">
+<!-- En-tête de carte -->
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-numeric-md text-label-numeric-md text-on-surface font-bold tracking-tight">DEV/2025/079</span>
+<span class="h-5 px-2 rounded-full bg-secondary/20 text-secondary font-label-caps text-label-caps uppercase flex items-center gap-1 shrink-0">
+<span class="material-symbols-outlined text-[12px]">visibility</span> DEVIS ACTIF
+            </span>
+</div>
+<span class="font-body-md text-body-md text-on-surface font-medium truncate mt-0.5">Entreprise de Construction Liège</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-secondary">Consulté en ligne il y a 2h</span>
+</div>
+<div class="text-right shrink-0">
+<span class="font-label-numeric-md text-label-numeric-md text-secondary font-bold block">62.000,00 €</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Estimation HTVA</span>
+</div>
+</div>
+<!-- Détail chantier & analyse IA -->
+<div class="bg-surface-container-low rounded p-space-sm flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[15px] shrink-0">architecture</span>
+<span class="font-body-sm text-body-sm truncate">Toiture à joint debout zinc prépatiné anthracite</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant pt-0.5">
+<span class="font-body-sm text-body-sm flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[13px]">tune</span> Calculé via Scan IA Drone (385 m²)
+          </span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-outline">Opt. 30% acompte</span>
+</div>
+</div>
+<!-- Action Footer -->
+<button class="w-full min-h-[48px] bg-secondary text-on-secondary rounded-lg font-title-md text-body-md font-bold flex items-center justify-center gap-1.5 active:bg-secondary-fixed transition-transform active:scale-[0.99] shadow-sm">
+<span class="material-symbols-outlined text-[18px]">receipt</span>
+<span>Convertir en Facture d'acompte (1 clic)</span>
+</button>
+</div>
+</div>
+<!-- Micro-interaction & Feedback Script -->
+<script>
+    // Micro-interactions douces pour le confort tactile sur chantier
+    document.querySelectorAll('button').forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        // Simple retour haptique visuel
+        const originalOpacity = this.style.opacity;
+        this.style.opacity = '0.75';
+        setTimeout(() => {
+          this.style.opacity = originalOpacity || '1';
+        }, 120);
+      });
+    });
+  </script>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-1px_8px_rgba(0,0,0,0.25)]" data-active-classes="text-primary"><div class="flex justify-between items-center h-16 px-margin"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="tableau-de-bord" href="#"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="font-label-caps text-label-caps uppercase tracking-wider">Bord</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="plans-ia" href="#"><span class="material-symbols-outlined text-[22px]">architecture</span><span class="font-label-caps text-label-caps uppercase tracking-wider">Plans IA</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="inspection" href="#"><span class="material-symbols-outlined text-[22px]">drone</span><span class="font-label-caps text-label-caps uppercase tracking-wider">Inspect</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] gap-0.5 transition-colors text-primary" data-path="finances" href="#"><span class="material-symbols-outlined text-[22px]">receipt_long</span><span class="font-label-caps text-label-caps uppercase tracking-wider">Finances</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="stock" href="#"><span class="material-symbols-outlined text-[22px]">inventory_2</span><span class="font-label-caps text-label-caps uppercase tracking-wider">Stock</span></a></div></nav></body></html>
