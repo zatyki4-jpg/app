@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pl"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600&amp;family=JetBrains+Mono:wght@500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container":"#1c2028","surface-container-highest":"#31353e","on-error":"#690005","on-primary":"#472a00","inverse-on-surface":"#2c3039","on-secondary-fixed":"#001f26","surface":"#0f131c","on-primary-fixed":"#2a1700","tertiary-fixed-dim":"#4edea3","secondary":"#4cd7f6","on-tertiary-fixed":"#002113","inverse-primary":"#855300","on-tertiary-fixed-variant":"#005236","secondary-fixed-dim":"#4cd7f6","surface-container-lowest":"#0a0e16","on-error-container":"#ffdad6","tertiary-container":"#30c88f","on-background":"#dfe2ee","on-tertiary":"#003824","on-secondary-fixed-variant":"#004e5c","tertiary-fixed":"#6ffbbe","outline":"#a08e7a","secondary-fixed":"#acedff","tertiary":"#56e5a9","primary-fixed":"#ffddb8","outline-variant":"#534434","on-secondary":"#003640","background":"#0f131c","surface-variant":"#31353e","surface-tint":"#ffb95f","primary-container":"#f59e0b","on-surface-variant":"#d8c3ad","secondary-container":"#03b5d3","on-secondary-container":"#00424e","surface-bright":"#353942","primary-fixed-dim":"#ffb95f","error-container":"#93000a","surface-container-low":"#181c24","on-surface":"#dfe2ee","inverse-surface":"#dfe2ee","surface-dim":"#0f131c","on-tertiary-container":"#004e34","on-primary-fixed-variant":"#653e00","surface-container-high":"#262a33","primary":"#ffc174","on-primary-container":"#613b00","error":"#ffb4ab"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"margin":"1rem","space-md":"1rem","space-xs":"0.25rem","space-sm":"0.5rem","space-xl":"2rem","space-lg":"1.5rem","gutter":"1rem"},fontFamily:{"headline-lg-mobile":["Space Grotesk"],"headline-md":["Space Grotesk"],"label-caps":["Space Grotesk"],"body-sm":["Hanken Grotesk"],"headline-xl-mobile":["Space Grotesk"],"label-numeric-sm":["JetBrains Mono"],"body-lg":["Hanken Grotesk"],"label-numeric-lg":["JetBrains Mono"],"body-md":["Hanken Grotesk"],"headline-xl":["Space Grotesk"],"title-md":["Hanken Grotesk"],"headline-lg":["Space Grotesk"],"label-numeric-md":["JetBrains Mono"]},fontSize:{"headline-lg-mobile":["22px",{"lineHeight":"28px","fontWeight":"700"}],"headline-md":["20px",{"lineHeight":"26px","fontWeight":"600"}],"label-caps":["11px",{"lineHeight":"14px","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","fontWeight":"700"}],"label-numeric-sm":["12px",{"lineHeight":"16px","fontWeight":"500"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-numeric-lg":["22px",{"lineHeight":"28px","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-xl":["36px",{"lineHeight":"44px","fontWeight":"700"}],"title-md":["18px",{"lineHeight":"24px","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"36px","fontWeight":"700"}],"label-numeric-md":["15px",{"lineHeight":"20px","fontWeight":"600"}]}}}};</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.3)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><img alt="DachPro AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrByRxcqMJzqvUpF_kBevxlixyHWe2CN3_dpvIr9JPiJyqmfD4Jferq0fvylvPyYLyiixSOik2Hcd_H8xFRz4s6q738GdfHBVOI_m0ExtGuWDYW4yCjNiPRo5hoOwTLqWFBApR3hNGrP001sd_p84ssbQ07C3L4SNp5TK68Ibhgh4tRBHX5NfhKxOfGqqZi-gL-G9NilO_UY1RxRioexVP1UJSqn4UTFBKZFkApnBtGBEA"/><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-md text-headline-md tracking-tight text-on-surface">DachPro</span><span class="font-headline-md text-headline-md tracking-tight text-primary-container">AI</span></div><span class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant truncate max-w-[120px]">Magazyn</span></div></div><div class="flex items-center gap-space-sm"><div class="flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-surface-container-high"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-numeric-sm text-label-numeric-sm text-tertiary uppercase">Peppol ONLINE</span></div><button class="flex items-center justify-center p-0.5 rounded-full ring-2 ring-primary-container/30 hover:ring-primary-container min-w-[44px] min-h-[44px]"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAS00d5ETwcktwazBRM1KcuOeFbBergilr5xWUe8hZFiuaj0pGCY86h5uPRmyxjQofCxIt-5bqPdfnpv2U-bIc7lhvSfFlAKncwaqblI7tqLfAqsM3yhZmQgNDCT-EmnYIDDyHuipnq7DKy6B_drRIzb34zZZOF23vEO7lKyl7JjBuGSwjeDoiRNuViPbQoRA0eg-d8urJ0Ay8CFz8tyr229sk84TpQVVfW1izBwSKp"/></button></div></div></header><main class="flex flex-col relative w-full px-margin pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full pb-6 space-y-space-md">
+<!-- TOP SUMMARY & QUICK STATS BANNER -->
+<div class="w-full bg-surface-container-high rounded-xl p-space-md shadow-md flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-primary-container/20 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">warehouse</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface">Plac Magazynowy</span>
+<span class="px-1.5 py-0.5 rounded-full bg-tertiary/20 text-tertiary font-label-numeric-sm text-label-numeric-sm">HUB-WWA</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">5 aktywnych budów • Wartość: 148 920 PLN</p>
+</div>
+</div>
+<button class="flex flex-col items-center justify-center p-2 rounded-xl bg-surface-container-highest text-secondary hover:bg-secondary-container hover:text-on-secondary-container transition-colors min-w-[48px] min-h-[48px]" id="scanBarcodeBtn">
+<span class="material-symbols-outlined text-[24px]">barcode_scanner</span>
+<span class="font-label-caps text-label-caps uppercase mt-0.5">Skanuj</span>
+</button>
+</div>
+<!-- SEARCH & BARCODE FIELD -->
+<div class="flex flex-col space-y-space-xs">
+<div class="relative w-full">
+<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-on-surface-variant">
+<span class="material-symbols-outlined text-[22px]">search</span>
+</div>
+<input class="w-full pl-10 pr-12 py-3 bg-surface-container rounded-xl font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none focus:bg-surface-container-high transition-all" id="searchInput" placeholder="Szukaj pokryć, membran, obróbek, wkrętów..." type="text"/>
+<button class="absolute inset-y-0 right-0 pr-3 flex items-center text-primary-container hover:text-primary transition-colors min-w-[44px] justify-center" title="Skaner EAN-13">
+<span class="material-symbols-outlined text-[24px]">qr_code_scanner</span>
+</button>
+</div>
+<!-- CATEGORY PILLS -->
+<div class="flex items-center gap-space-xs overflow-x-auto py-1 no-scrollbar">
+<button class="category-chip active px-3 py-1.5 rounded-full bg-primary-container text-on-primary-container font-label-caps text-label-caps whitespace-nowrap shadow-sm">
+        Wszystkie (54)
+      </button>
+<button class="category-chip px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps whitespace-nowrap hover:text-on-surface">
+        Pokrycia dachowe
+      </button>
+<button class="category-chip px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps whitespace-nowrap hover:text-on-surface">
+        Membrany &amp; Izolacje
+      </button>
+<button class="category-chip px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps whitespace-nowrap hover:text-on-surface">
+        Orynnowanie
+      </button>
+<button class="category-chip px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps whitespace-nowrap hover:text-on-surface">
+        Obróbki blacharskie
+      </button>
+<button class="category-chip px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps whitespace-nowrap hover:text-on-surface">
+        Akcesoria &amp; Wkręty
+      </button>
+</div>
+</div>
+<!-- ACTIVE ALLOCATION CARD (KALKULATOR ODPADU & REZERWACJI) -->
+<div class="w-full bg-surface-container rounded-xl p-space-md shadow-md space-y-space-sm relative overflow-hidden">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-primary-container">rule</span>
+<span class="font-headline-md text-headline-md text-on-surface">Kalkulator Odpadu &amp; Rezerwacje</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/20 text-secondary font-label-numeric-sm text-label-numeric-sm">
+        Budowa Józefów
+      </span>
+</div>
+<!-- Active Job Allocation Status -->
+<div class="bg-surface-container-low rounded-xl p-space-sm space-y-space-xs">
+<div class="flex justify-between items-center text-on-surface">
+<span class="font-body-sm text-body-sm font-semibold text-primary">Willa Józefów (Dach kopertowy 28°):</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-tertiary">Marża bazowa 30%</span>
+</div>
+<!-- Progress visualizer for stock reservation vs waste -->
+<div class="space-y-1">
+<div class="flex justify-between font-label-numeric-sm text-label-numeric-sm text-on-surface-variant">
+<span>Zarezerwowano netto: 246 m²</span>
+<span>+14% odpad ciecia (34 m²)</span>
+</div>
+<div class="w-full h-2.5 bg-surface-container-highest rounded-full overflow-hidden flex">
+<div class="bg-primary-container h-full rounded-l-full transition-all" style="width: 72%;" title="Netto pokrycie"></div>
+<div class="bg-error h-full rounded-r-full opacity-80" style="width: 14%;" title="Odpad technologiczny"></div>
+<div class="bg-surface-bright h-full flex-1" title="Dostępny zapas"></div>
+</div>
+<div class="flex justify-between items-center pt-0.5">
+<span class="font-label-caps text-label-caps text-on-surface-variant flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span> Zarezerwowano 280 m²
+          </span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface font-semibold">
+            Łącznie: 280 / 420 m² na placu
+          </span>
+</div>
+</div>
+</div>
+</div>
+<!-- INVENTORY SECTION HEADER -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-tertiary">inventory</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Stany Magazynowe &amp; Ceny Hurt</h2>
+</div>
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface-variant">5 pozycji zsynchronizowanych</span>
+</div>
+<!-- MATERIAL LIST -->
+<div class="flex flex-col space-y-space-sm" id="materialsContainer">
+<!-- ITEM 1: Ruukki Finnera Purex 40 -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-md space-y-space-sm transition-transform active:scale-[0.99]">
+<div class="flex items-start gap-space-sm">
+<div class="w-16 h-16 rounded-xl bg-surface-container-highest flex-shrink-0 overflow-hidden relative shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Close-up macro shot of modern graphite anthracite modular metal roof tile Ruukki Finnera Purex finish with crisp industrial stamping under hard workshop lighting, high texture detail" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBGk3L1tit9pNIWEK42mpzvVzGi1WJTXBOo6VwnfBbJeW7Iuzj9WCaqoPc-w-9f96uMVxVVe6w4MrAXQfLeA9gc4GsIKNZerokqfhE8zDz4H2Q2MgpsXVKFGFTMDy3q-1nK0ug4hHXZO9-h16s8i2EFB5EFgsJK5AGLvDc5V-WgAQD_TvR1kqe05CrYE66f5D23aWPAEkf9t115tqMphs46UP3YYW_QNhE19vMf9kw"/>
+<div class="absolute bottom-0 right-0 bg-primary-container text-on-primary-container font-label-caps text-[9px] px-1 py-0.2 rounded-tl">
+            MODUŁ
+          </div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-1">
+<h3 class="font-title-md text-title-md text-on-surface truncate leading-tight">Blachodachówka Ruukki Finnera</h3>
+<span class="px-2 py-0.5 rounded-full bg-tertiary/20 text-tertiary font-label-caps text-label-caps flex-shrink-0">
+              NA PLACU
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">Purex 40 • RAL 7016 Anthracite</p>
+<div class="mt-1 flex items-baseline gap-space-xs">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold">420</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface-variant">m² dostępne</span>
+</div>
+</div>
+</div>
+<!-- Pricing & Margin Breakdown Card -->
+<div class="bg-surface-container-low rounded-xl p-space-sm grid grid-cols-3 gap-2 text-center">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant">HURT (SIG)</span>
+<span class="font-label-numeric-md text-label-numeric-md text-on-surface font-semibold">58.50 <span class="text-[10px]">PLN</span></span>
+</div>
+<div class="flex flex-col bg-surface-container-high rounded-lg py-0.5">
+<span class="font-label-caps text-label-caps text-primary-container">MARŻA</span>
+<span class="font-label-numeric-md text-label-numeric-md text-primary-container font-bold">+30%</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant">OFERTA KLIENT</span>
+<span class="font-label-numeric-md text-label-numeric-md text-tertiary font-semibold">76.00 <span class="text-[10px]">PLN</span></span>
+</div>
+</div>
+<!-- Reservation Action info -->
+<div class="flex items-center justify-between text-body-sm pt-1 border-t border-surface-container-highest/40">
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface-variant flex items-center gap-1 truncate">
+<span class="material-symbols-outlined text-[16px] text-primary">bookmark</span>
+          Zarezerwowano 280 m² dla: Willa Józefów
+        </span>
+<button class="px-2 py-1 rounded bg-surface-container-highest text-primary font-label-caps text-label-caps hover:bg-surface-bright transition-colors flex-shrink-0">
+          Zarządzaj
+        </button>
+</div>
+</div>
+<!-- ITEM 2: Creaton Titania Czarna Angoba -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-md space-y-space-sm transition-transform active:scale-[0.99]">
+<div class="flex items-start gap-space-sm">
+<div class="w-16 h-16 rounded-xl bg-surface-container-highest flex-shrink-0 overflow-hidden relative shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Stacked glossy premium black ceramic roof tiles Creaton Titania on an industrial wooden shipping pallet ready for delivery at building site, crisp high contrast lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqykQ3ltAozfONLLL6nxNncDPu7KPdxNGPtJuB-vbZYsC0YnE2ZbXFlIKwq_h6c9faM6xQ7epCVQOeChrSORpL1iR9BvMaFCdKjufSRtgfSUcS8YDzrtOOGSRgBMZ_fSJHUzqiZHdb4w5bDYGziTAxEvxjwu272RZ6k8rv3P3f9UAYH2Ph8eYfLOw9wTYbKivVIvjPXdEu4Qrpa4e3aHJECQZUAjayRRBeRuCWuZ9t"/>
+<div class="absolute bottom-0 right-0 bg-secondary-container text-on-secondary-container font-label-caps text-[9px] px-1 py-0.2 rounded-tl">
+            CERAMIKA
+          </div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-1">
+<h3 class="font-title-md text-title-md text-on-surface truncate leading-tight">Creaton Titania Czarna</h3>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/20 text-secondary font-label-caps text-label-caps flex-shrink-0 flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] animate-spin">local_shipping</span> JUTRO 07:30
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">Angoba • Wielkoformatowa holenderka płaska</p>
+<div class="mt-1 flex items-baseline gap-space-xs">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-bold">1 850</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface-variant">szt. w trasie (DachyPol)</span>
+</div>
+</div>
+</div>
+<!-- Quick Status Strip -->
+<div class="bg-surface-container-low rounded-xl p-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">schedule</span>
+<span class="font-body-sm text-body-sm text-on-surface">Status dostawy: <strong class="text-secondary">W trasie (kierowca Jan B.)</strong></span>
+</div>
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface-variant">WZ #902/2025</span>
+</div>
+</div>
+<!-- ITEM 3: Membrana Dorken Delta-Vent S Plus -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-md space-y-space-sm transition-transform active:scale-[0.99] relative overflow-hidden">
+<!-- High-visibility safety hazard banner indicator on left -->
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-error"></div>
+<div class="flex items-start gap-space-sm pl-1">
+<div class="w-16 h-16 rounded-xl bg-surface-container-highest flex-shrink-0 overflow-hidden relative shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Technical high-durability roofing underlayment membrane roll Dorken Delta-Vent S Plus unrolled showing red integrated adhesive sealing strip on construction rafter, macro industrial view" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDP-KACgV201n7LRgUtqj2lSqo8Byz7qurOqvqZWKD-7wqtPR5BC9sHbPoGPgO0z4djxn7rOG0O65C9JN7x8LXmvpubAvIcxlfok0YCZVCMsiH5PTMVjZi-1bZH4S5ez2_jYwff4szJETL9Uuk-TAV7sgnaR0-s-ViSlbkfYiOtAhw88GMMmsNlxUWmIYwLexB7J3F2rxtSJxNAdDbchwsOwR80e1uY3Gki1gG1UKJ-"/>
+<div class="absolute bottom-0 right-0 bg-error text-on-error font-label-caps text-[9px] px-1 py-0.2 rounded-tl">
+            DEFICYT
+          </div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-1">
+<h3 class="font-title-md text-title-md text-on-surface truncate leading-tight">Dorken Delta-Vent S Plus</h3>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-error font-label-caps text-label-caps flex-shrink-0 animate-pulse">
+              BRAK MATERIAŁU
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">Ze zintegrowanym paskiem klejącym (Plus)</p>
+<div class="mt-1 flex items-baseline gap-space-xs">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-error font-bold">8</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface-variant">rolek (600 m²) na stanie</span>
+</div>
+</div>
+</div>
+<!-- Critical Alert Box -->
+<div class="bg-error-container/30 rounded-xl p-space-sm flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-error flex-shrink-0 mt-0.5">warning</span>
+<div class="flex-1">
+<p class="font-body-sm text-body-sm text-error font-semibold leading-tight">
+            Niski stan: poniżej zapotrzebowania budowy Józefów
+          </p>
+<p class="font-label-numeric-sm text-label-numeric-sm text-on-surface-variant mt-0.5">
+            Wymóg montażu: 10 rolek (750 m²). Brakuje: 2 rolki (150 m²).
+          </p>
+</div>
+<button class="px-2.5 py-1.5 rounded-lg bg-primary-container text-on-primary-container font-label-caps text-label-caps uppercase hover:brightness-110 flex-shrink-0 transition-transform active:scale-95">
+          Dobierz
+        </button>
+</div>
+</div>
+<!-- ITEM 4: Taśma kalenicowa Eurovent Roll 390mm -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-md space-y-space-sm transition-transform active:scale-[0.99]">
+<div class="flex items-start gap-space-sm">
+<div class="w-16 h-16 rounded-xl bg-surface-container-highest flex-shrink-0 overflow-hidden relative shadow-sm">
+<div class="w-full h-full flex items-center justify-center bg-surface-container-lowest text-on-surface-variant">
+<span class="material-symbols-outlined text-[32px] text-on-surface-variant">adjust</span>
+</div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-1">
+<h3 class="font-title-md text-title-md text-on-surface truncate leading-tight">Taśma Eurovent Roll 390mm</h3>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-caps text-label-caps flex-shrink-0">
+              OK
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">Anthracite RAL 7016 • Wentylacja kalenicy</p>
+<div class="mt-1 flex items-baseline gap-space-xs">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-bold">14</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface-variant">rolek (70 mb)</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-sm flex justify-between items-center text-body-sm">
+<span class="text-on-surface-variant font-label-numeric-sm text-label-numeric-sm">Cena zakupu: 42.00 PLN/rolka</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-tertiary">Zapas na 2 projekty</span>
+</div>
+</div>
+<!-- ITEM 5: Wkręty farmerskie Gunnebo -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-md space-y-space-sm transition-transform active:scale-[0.99]">
+<div class="flex items-start gap-space-sm">
+<div class="w-16 h-16 rounded-xl bg-surface-container-highest flex-shrink-0 overflow-hidden relative shadow-sm">
+<div class="w-full h-full flex items-center justify-center bg-surface-container-lowest text-primary">
+<span class="material-symbols-outlined text-[32px]">hardware</span>
+</div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-1">
+<h3 class="font-title-md text-title-md text-on-surface truncate leading-tight">Wkręty Gunnebo 4.8x35</h3>
+<span class="px-2 py-0.5 rounded-full bg-tertiary/20 text-tertiary font-label-caps text-label-caps flex-shrink-0">
+              NA STANIE
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">RAL 7016 • Podkładka EPDM samo-wulkanizująca</p>
+<div class="mt-1 flex items-baseline gap-space-xs">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-bold">12</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface-variant">paczek (3 000 szt.)</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-sm flex justify-between items-center">
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface-variant">Lokalizacja: Regał B-4</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface">Min: 5 paczek (bezpieczny)</span>
+</div>
+</div>
+</div>
+<!-- SZYBKIE ZAMÓWIENIE HURTOWE (CALL TO ACTION) -->
+<div class="pt-2">
+<div class="bg-gradient-to-br from-surface-container-high to-surface-container rounded-xl p-space-md shadow-xl space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-primary-container animate-ping"></span>
+<span class="font-headline-md text-headline-md text-on-surface">Kolejka Zaopatrzenia (B2B)</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-primary font-label-numeric-sm text-label-numeric-sm">
+          2 pozycje • 1 450 PLN
+        </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Automatyczne uzupełnienie braków dla budowy <strong class="text-on-surface">Willa Józefów</strong> (2x Dorken Delta-Vent S Plus) bezpośrednio w hurtowni zintegrowanej z Peppol/KSeF.
+      </p>
+<!-- Integrated Wholesale Order Button -->
+<button class="w-full min-h-[52px] bg-primary-container hover:bg-surface-tint text-on-primary-container rounded-xl font-headline-md text-headline-md font-bold uppercase tracking-wider flex items-center justify-center gap-space-sm shadow-md transition-all active:scale-[0.98]" id="orderWholesaleBtn">
+<span class="material-symbols-outlined text-[24px]">shopping_cart_checkout</span>
+<span>Złóż e-Zamówienie (DachyPol / SIG)</span>
+</button>
+<div class="flex items-center justify-center gap-4 text-on-surface-variant/80">
+<div class="flex items-center gap-1 font-label-caps text-label-caps">
+<span class="material-symbols-outlined text-[16px] text-tertiary">verified_user</span>
+          Autoryzacja NIP KSeF
+        </div>
+<div class="flex items-center gap-1 font-label-caps text-label-caps">
+<span class="material-symbols-outlined text-[16px] text-secondary">local_shipping</span>
+          Dostawa jutro przed 08:00
+        </div>
+</div>
+</div>
+</div>
+<!-- TOAST NOTIFICATION FOR INTERACTION (HIDDEN INITIALLY) -->
+<div class="fixed bottom-24 left-margin right-margin bg-tertiary text-on-tertiary p-space-md rounded-xl shadow-2xl flex items-center justify-between opacity-0 pointer-events-none transition-opacity duration-300 z-50" id="toastMessage">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[24px]">task_alt</span>
+<span class="font-title-md text-title-md" id="toastText">Zamówienie przesłane do SIG!</span>
+</div>
+<span class="font-label-caps text-label-caps">KSeF OK</span>
+</div>
+</div>
+<script>
+  (function() {
+    // Quick Category filter toggle
+    const categoryChips = document.querySelectorAll('.category-chip');
+    categoryChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        categoryChips.forEach(c => {
+          c.classList.remove('bg-primary-container', 'text-on-primary-container', 'active');
+          c.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+        });
+        chip.classList.add('bg-primary-container', 'text-on-primary-container', 'active');
+        chip.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+      });
+    });
+
+    // Barcode scanner trigger simulation
+    const scanBtn = document.getElementById('scanBarcodeBtn');
+    const toast = document.getElementById('toastMessage');
+    const toastText = document.getElementById('toastText');
+
+    function showToast(message) {
+      if (!toast) return;
+      toastText.textContent = message;
+      toast.classList.remove('opacity-0', 'pointer-events-none');
+      toast.classList.add('opacity-100');
+      setTimeout(() => {
+        toast.classList.remove('opacity-100');
+        toast.classList.add('opacity-0', 'pointer-events-none');
+      }, 3200);
+    }
+
+    if (scanBtn) {
+      scanBtn.addEventListener('click', () => {
+        showToast("Kamera aktywna: Nakieruj na kod EAN-13 palety");
+      });
+    }
+
+    // Wholesale 1-click Order Handler
+    const orderBtn = document.getElementById('orderWholesaleBtn');
+    if (orderBtn) {
+      orderBtn.addEventListener('click', () => {
+        orderBtn.disabled = true;
+        const originalText = orderBtn.innerHTML;
+        orderBtn.innerHTML = `
+          <span class="material-symbols-outlined animate-spin text-[24px]">sync</span>
+          <span>Przesyłanie zamówienia Peppol...</span>
+        `;
+        setTimeout(() => {
+          orderBtn.innerHTML = originalText;
+          orderBtn.disabled = false;
+          showToast("Wysłano e-Zamówienie do Hurtowni SIG (PO #44892)");
+        }, 1200);
+      });
+    }
+
+    // Simple search filtering simulation
+    const searchInput = document.getElementById('searchInput');
+    const materialsContainer = document.getElementById('materialsContainer');
+    if (searchInput && materialsContainer) {
+      searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase().trim();
+        const items = materialsContainer.children;
+        Array.from(items).forEach(item => {
+          const text = item.innerText.toLowerCase();
+          if (text.includes(query)) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.5)]" data-active-classes="text-primary-container scale-105"><div class="h-20 px-space-xs flex items-center justify-around"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] px-1 py-1 text-on-surface-variant transition-all" data-path="pulpit" href="#"><span class="material-symbols-outlined text-[24px]">grid_view</span><span class="font-label-caps text-label-caps tracking-wide mt-1">Pulpit</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] px-1 py-1 text-on-surface-variant transition-all" data-path="plany-ai" href="#"><span class="material-symbols-outlined text-[24px]">architecture</span><span class="font-label-caps text-label-caps tracking-wide mt-1">Plany AI</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] px-1 py-1 text-on-surface-variant transition-all" data-path="inspekcja" href="#"><span class="material-symbols-outlined text-[24px]">document_scanner</span><span class="font-label-caps text-label-caps tracking-wide mt-1">Inspekcja</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] px-1 py-1 text-on-surface-variant transition-all" data-path="finanse" href="#"><span class="material-symbols-outlined text-[24px]">account_balance_wallet</span><span class="font-label-caps text-label-caps tracking-wide mt-1">Finanse</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] px-1 py-1 transition-all text-primary-container scale-105" data-path="magazyn" href="#"><span class="material-symbols-outlined text-[24px]">inventory_2</span><span class="font-label-caps text-label-caps tracking-wide mt-1">Magazyn</span></a></div></nav></body></html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-background": "#dfe2ee", "error-container": "#93000a", "on-tertiary-fixed": "#002113", "on-primary": "#472a00", "on-primary-fixed-variant": "#653e00", "on-primary-fixed": "#2a1700", "surface-container": "#1c2028", "primary-fixed-dim": "#ffb95f", "secondary-fixed": "#acedff", "background": "#0f131c", "inverse-primary": "#855300", "on-tertiary-fixed-variant": "#005236", "on-secondary": "#003640", "secondary": "#4cd7f6", "tertiary-fixed": "#6ffbbe", "on-tertiary-container": "#004e34", "on-tertiary": "#003824", "on-error-container": "#ffdad6", "on-surface-variant": "#d8c3ad", "on-error": "#690005", "primary-container": "#f59e0b", "surface": "#0f131c", "surface-container-low": "#181c24", "on-secondary-fixed": "#001f26", "secondary-fixed-dim": "#4cd7f6", "on-secondary-container": "#00424e", "on-primary-container": "#613b00", "surface-tint": "#ffb95f", "outline": "#a08e7a", "on-secondary-fixed-variant": "#004e5c", "error": "#ffb4ab", "surface-dim": "#0f131c", "tertiary": "#56e5a9", "surface-variant": "#31353e", "primary": "#ffc174", "primary-fixed": "#ffddb8", "outline-variant": "#534434", "tertiary-fixed-dim": "#4edea3", "inverse-surface": "#dfe2ee", "surface-bright": "#353942", "surface-container-high": "#262a33", "inverse-on-surface": "#2c3039", "on-surface": "#dfe2ee", "secondary-container": "#03b5d3", "surface-container-highest": "#31353e", "surface-container-lowest": "#0a0e16", "tertiary-container": "#30c88f" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-md": "1rem", "space-lg": "1.5rem", "space-xl": "2rem", "margin": "1rem", "gutter": "1rem", "space-xs": "0.25rem", "space-sm": "0.5rem" }, "fontFamily": { "label-numeric-lg": ["JetBrains Mono"], "body-lg": ["Hanken Grotesk"], "label-numeric-sm": ["JetBrains Mono"], "headline-md": ["Space Grotesk"], "headline-xl-mobile": ["Space Grotesk"], "headline-xl": ["Space Grotesk"], "headline-lg-mobile": ["Space Grotesk"], "label-numeric-md": ["JetBrains Mono"], "title-md": ["Hanken Grotesk"], "label-caps": ["Space Grotesk"], "headline-lg": ["Space Grotesk"], "body-sm": ["Hanken Grotesk"], "body-md": ["Hanken Grotesk"] }, "fontSize": { "label-numeric-lg": ["22px", { "lineHeight": "28px", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-numeric-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "headline-md": ["20px", { "lineHeight": "26px", "fontWeight": "600" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }], "headline-xl": ["36px", { "lineHeight": "44px", "fontWeight": "700" }], "headline-lg-mobile": ["22px", { "lineHeight": "28px", "fontWeight": "700" }], "label-numeric-md": ["15px", { "lineHeight": "20px", "fontWeight": "600" }], "title-md": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "label-caps": ["11px", { "lineHeight": "14px", "fontWeight": "700" }], "headline-lg": ["28px", { "lineHeight": "36px", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#0f131c;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><div class="w-9 h-9 rounded bg-surface-container-high flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-primary text-[20px]">roofing</span></div><div class="flex flex-col min-w-0"><span class="font-headline-md text-headline-md text-primary tracking-tight truncate leading-none">ToiturePro AI</span><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider truncate">Finances</span></div></div><div class="flex items-center gap-space-xs shrink-0"><div class="h-7 px-2 rounded bg-tertiary/15 text-tertiary flex items-center gap-1 shrink-0"><span class="material-symbols-outlined text-[14px]">verified_user</span><span class="font-label-numeric-sm text-label-numeric-sm leading-none">PEPPOL BE</span></div><button class="h-7 px-2 rounded bg-surface-container-high text-on-surface flex items-center gap-1 shrink-0 hover:bg-surface-container-highest transition-colors"><span class="font-label-numeric-sm text-label-numeric-sm leading-none">🇧🇪 FR</span><span class="material-symbols-outlined text-[14px] text-on-surface-variant">expand_more</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 px-margin bg-surface min-h-screen"><div class="flex flex-col w-full pb-10 space-y-5">
+<!-- Status & Source Header Banner -->
+<div class="bg-surface-container-high rounded-xl p-space-md shadow-lg space-y-3">
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-tertiary shadow-[0_0_8px_rgba(86,229,169,0.7)] animate-pulse"></span>
+<span class="font-headline-md text-headline-md text-on-surface">Nouvelle Facture Peppol UBL</span>
+</div>
+<div class="px-2 py-1 rounded bg-tertiary/15 text-tertiary flex items-center gap-1 shrink-0">
+<span class="material-symbols-outlined text-[13px]">lock</span>
+<span class="font-label-caps text-label-caps tracking-wider uppercase">AS4 / BOSA Direct</span>
+</div>
+</div>
+<!-- Metre IA Source Card with delight pill badge -->
+<div class="bg-surface-container-low rounded-lg p-3 space-y-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider">Source : Diagnostic &amp; Métré IA</span>
+</div>
+<span class="font-label-numeric-sm text-label-numeric-sm text-tertiary bg-tertiary/10 px-2 py-0.5 rounded">99.4% Précision</span>
+</div>
+<div class="flex items-center justify-between gap-2 pt-1">
+<div class="min-w-0">
+<p class="font-title-md text-title-md text-on-surface truncate">Villa Namur (Toit 4 versants)</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-2">
+<span>Réf. IA-2025-089</span>
+<span>•</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-primary font-bold">Surface: 312 m²</span>
+<span>•</span>
+<span class="font-label-numeric-sm text-label-numeric-sm">Pente 38°</span>
+</p>
+</div>
+<button class="px-2.5 py-1.5 rounded bg-surface-container-highest text-secondary hover:bg-secondary/20 transition-colors flex items-center gap-1 shrink-0 text-body-sm font-semibold" type="button">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+<span>Re-lier</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Client & Buyer Segment (Particulier vs B2B) -->
+<section class="bg-surface-container rounded-xl p-space-md shadow-md space-y-4">
+<div class="flex items-center justify-between">
+<h2 class="font-title-md text-title-md text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">person_pin_circle</span>
+        Destinataire / Débiteur
+      </h2>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Peppol BIS 3.0</span>
+</div>
+<!-- Client Type Switcher -->
+<div class="grid grid-cols-2 gap-1 p-1 bg-surface-container-lowest rounded-lg">
+<button class="py-2.5 px-3 rounded text-center transition-all bg-primary-container text-on-primary font-headline-md text-[13px] flex items-center justify-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">cottage</span>
+<span>Particulier (Rénov.)</span>
+</button>
+<button class="py-2.5 px-3 rounded text-center transition-all text-on-surface-variant hover:text-on-surface font-title-md text-[13px] flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">domain</span>
+<span>Entreprise B2B</span>
+</button>
+</div>
+<!-- Client Form Fields -->
+<div class="space-y-3">
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider mb-1">Nom du maître d'ouvrage / Bénéficiaire</label>
+<div class="h-[48px] px-3 bg-surface-container-low rounded flex items-center justify-between text-on-surface">
+<span class="font-body-md text-body-md font-medium">Famille Dupont / Dubois</span>
+<span class="material-symbols-outlined text-tertiary text-[18px]">verified</span>
+</div>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider mb-1">Adresse des travaux d'assujettissement</label>
+<div class="h-[48px] px-3 bg-surface-container-low rounded flex items-center justify-between text-on-surface">
+<span class="font-body-md text-body-md truncate">Chaussée de Liège 184, 5000 Namur</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant bg-surface-container-high px-1.5 py-0.5 rounded">BE-WAL</span>
+</div>
+</div>
+<div>
+<div class="flex items-center justify-between mb-1">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Identifiant Peppol / Registre National / BCE</label>
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-[14px]">task_alt</span>
+<span class="font-label-numeric-sm text-label-numeric-sm">ID Peppol Validé (0208)</span>
+</div>
+</div>
+<div class="h-[48px] px-3 bg-surface-container-low rounded flex items-center justify-between text-on-surface font-label-numeric-md text-label-numeric-md">
+<span>0208:0892.415.789</span>
+<span class="px-2 py-0.5 rounded bg-tertiary/15 text-tertiary font-label-caps text-label-caps tracking-widest uppercase">VIES OK</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Legal VAT Regime & Statutory Declaration -->
+<section class="bg-surface-container rounded-xl p-space-md shadow-md space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">gavel</span>
+<h2 class="font-title-md text-title-md text-on-surface">Régime Fiscal Belge</h2>
+</div>
+<span class="font-label-caps text-label-caps text-tertiary bg-tertiary/10 px-2 py-0.5 rounded uppercase">Art. 1 bis AR 20</span>
+</div>
+<!-- Active Selection 6% -->
+<div class="bg-surface-container-high rounded-lg p-3 space-y-2.5 shadow-sm">
+<div class="flex items-start gap-2.5">
+<div class="w-5 h-5 rounded bg-primary-container text-on-primary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-primary font-bold">TVA Réduite 6% (Rénovation)</span>
+<span class="px-2 py-0.5 rounded bg-primary-container text-on-primary font-label-numeric-sm text-label-numeric-sm font-bold">ACTIF</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
+            Logement privé achevé depuis plus de 10 ans. Attestation légale 6% dématérialisée intégrée avec signature électronique du client.
+          </p>
+</div>
+</div>
+<!-- Legal declaration micro-box -->
+<div class="bg-surface-container-low p-2.5 rounded text-on-surface-variant font-body-sm text-body-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px] shrink-0">history_edu</span>
+<span class="truncate">Attestation n° ATT-2025-NAM-042 certifiée conforme</span>
+</div>
+</div>
+<!-- Secondary Rates -->
+<div class="grid grid-cols-2 gap-2">
+<div class="bg-surface-container-low p-2.5 rounded flex items-center justify-between opacity-80 hover:opacity-100 transition-opacity">
+<div>
+<span class="font-title-md text-[13px] text-on-surface block font-semibold">TVA 21% (Standard)</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Fourniture pure / Neuf</span>
+</div>
+<span class="font-label-numeric-sm text-label-numeric-sm text-secondary">Ventilé</span>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded flex items-center justify-between opacity-60">
+<div>
+<span class="font-title-md text-[13px] text-on-surface block font-semibold">Autoliquidation</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Art. 20 (B2B Pro)</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[16px]">radio_button_unchecked</span>
+</div>
+</div>
+</section>
+<!-- Job Lines / Invoice Items with dual TVA breakdown -->
+<section class="space-y-3">
+<div class="flex items-center justify-between px-1">
+<h2 class="font-headline-md text-headline-md text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">view_timeline</span>
+        Lignes de Facturation UBL
+      </h2>
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface-variant">3 Postes d'ouvrage</span>
+</div>
+<!-- Item 1 (6% TVA) -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-md space-y-2">
+<div class="flex items-start justify-between gap-2">
+<div class="flex-1">
+<div class="flex items-center gap-2 mb-1">
+<span class="px-2 py-0.5 rounded bg-tertiary/15 text-tertiary font-label-numeric-sm text-label-numeric-sm font-bold">TVA 6%</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Métré IA #01</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">Fourniture &amp; Pose Tuiles Koramic Actua 10</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Main d'œuvre, échafaudage et couverture rénovation complète</p>
+</div>
+<button class="w-8 h-8 rounded bg-surface-container-high text-on-surface-variant hover:text-error flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+<div class="flex items-end justify-between pt-2 bg-surface-container-low p-2 rounded">
+<div class="font-label-numeric-sm text-label-numeric-sm text-on-surface-variant">
+<span>312 m²</span> × <span>78,00 €/m²</span>
+</div>
+<div class="text-right">
+<div class="font-label-numeric-md text-label-numeric-md text-on-surface">24.336,00 € HTVA</div>
+<div class="font-label-numeric-sm text-label-numeric-sm text-tertiary">+1.460,16 € (TVA 6%)</div>
+</div>
+</div>
+</div>
+<!-- Item 2 (6% TVA) -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-md space-y-2">
+<div class="flex items-start justify-between gap-2">
+<div class="flex-1">
+<div class="flex items-center gap-2 mb-1">
+<span class="px-2 py-0.5 rounded bg-tertiary/15 text-tertiary font-label-numeric-sm text-label-numeric-sm font-bold">TVA 6%</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Étanchéité</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">Membrane sous-toiture Delta-Vent S + Liteaux</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Dépose ancienne toile, pose écran HPV &amp; lattis sapin rouge traité</p>
+</div>
+<button class="w-8 h-8 rounded bg-surface-container-high text-on-surface-variant hover:text-error flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+<div class="flex items-end justify-between pt-2 bg-surface-container-low p-2 rounded">
+<div class="font-label-numeric-sm text-label-numeric-sm text-on-surface-variant">
+<span>Forfait d'étanchéité globale</span>
+</div>
+<div class="text-right">
+<div class="font-label-numeric-md text-label-numeric-md text-on-surface">2.850,00 € HTVA</div>
+<div class="font-label-numeric-sm text-label-numeric-sm text-tertiary">+171,00 € (TVA 6%)</div>
+</div>
+</div>
+</div>
+<!-- Item 3 (21% TVA - Pure Material Supply) -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-md space-y-2">
+<div class="flex items-start justify-between gap-2">
+<div class="flex-1">
+<div class="flex items-center gap-2 mb-1">
+<span class="px-2 py-0.5 rounded bg-secondary/15 text-secondary font-label-numeric-sm text-label-numeric-sm font-bold">TVA 21%</span>
+<span class="font-label-caps text-label-caps text-secondary-fixed uppercase">Fourniture Matériel</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">Fenêtres de toit Velux GPU PK08</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">3x Velux polyuréthane motorisés avec collerettes isolantes BDX</p>
+</div>
+<button class="w-8 h-8 rounded bg-surface-container-high text-on-surface-variant hover:text-error flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+<div class="flex items-end justify-between pt-2 bg-surface-container-low p-2 rounded">
+<div class="font-label-numeric-sm text-label-numeric-sm text-on-surface-variant">
+<span>3 pièces</span> × <span>920,00 €/u</span>
+</div>
+<div class="text-right">
+<div class="font-label-numeric-md text-label-numeric-md text-on-surface">2.760,00 € HTVA</div>
+<div class="font-label-numeric-sm text-label-numeric-sm text-secondary">+579,60 € (TVA 21%)</div>
+</div>
+</div>
+</div>
+<!-- Add item action -->
+<button class="w-full h-[48px] rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-primary flex items-center justify-center gap-2 font-headline-md text-[14px] transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>Ajouter une ligne d'ouvrage</span>
+</button>
+</section>
+<!-- Complete Financial Ledger & VAT Ventilation (Peppol compliant structure) -->
+<section class="bg-surface-container-high rounded-xl p-space-md shadow-lg space-y-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">calculate</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Ventilation &amp; Totaux Peppol</h2>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant bg-surface-container px-2 py-0.5 rounded">EUR (BE)</span>
+</div>
+<!-- Breakdown Table -->
+<div class="bg-surface-container-low rounded-lg p-3 space-y-2.5">
+<div class="flex items-center justify-between text-body-md text-on-surface-variant">
+<span>Sous-total Net HTVA</span>
+<span class="font-label-numeric-md text-label-numeric-md text-on-surface">29.946,00 €</span>
+</div>
+<div class="p-2 rounded bg-surface-container space-y-1.5">
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant">
+<span class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+            Base 6% Rénovation (27.186,00 €)
+          </span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-tertiary">1.631,16 €</span>
+</div>
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant">
+<span class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+            Base 21% Fournitures (2.760,00 €)
+          </span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-secondary">579,60 €</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-body-md text-on-surface-variant pt-1">
+<span>Total TVA Reversée</span>
+<span class="font-label-numeric-md text-label-numeric-md text-primary">2.210,76 €</span>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-headline-md text-headline-md text-on-surface">Total Général TTC</span>
+<span class="font-label-numeric-lg text-label-numeric-lg text-on-surface">32.156,76 €</span>
+</div>
+<!-- Down payment deduction -->
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant pt-2 bg-surface-container-lowest/60 p-2 rounded">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+          Acompte reçu (30% à la signature)
+        </span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-tertiary">-9.647,03 €</span>
+</div>
+</div>
+<!-- Final Payable Box -->
+<div class="bg-surface-container-lowest rounded-lg p-3 flex items-center justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-wider block">Solde Net Restant Dû</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Échéance 30 j. (Virement SEPA)</span>
+</div>
+<div class="text-right">
+<span class="font-label-numeric-lg text-label-numeric-lg text-primary">22.509,73 €</span>
+</div>
+</div>
+</section>
+<!-- Transmission & Actions Panel -->
+<div class="space-y-3 pt-2">
+<!-- Primary Amber Industrial Button -->
+<button class="w-full min-h-[56px] px-4 rounded-xl bg-primary-container hover:bg-primary-fixed-dim text-on-primary font-headline-md text-headline-md flex items-center justify-center gap-2.5 shadow-xl transition-all active:scale-[0.99]" type="button">
+<span class="material-symbols-outlined text-[24px]">send_and_archive</span>
+<span>Signer &amp; Transmettre via Peppol</span>
+</button>
+<!-- Secondary Utilities -->
+<div class="grid grid-cols-2 gap-2">
+<button class="min-h-[48px] px-3 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-title-md text-[13px] flex items-center justify-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">picture_as_pdf</span>
+<span>Aperçu PDF légal</span>
+</button>
+<button class="min-h-[48px] px-3 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface font-title-md text-[13px] flex items-center justify-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Brouillon XML</span>
+</button>
+</div>
+<!-- Security footnote -->
+<div class="flex items-center justify-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-tertiary">verified_user</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider">Conforme Arrêté Royal TVA &amp; Réseau Peppol e-Invoicing 2026</span>
+</div>
+</div>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-1px_8px_rgba(0,0,0,0.25)]" data-active-classes="text-primary"><div class="flex justify-between items-center h-16 px-margin"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="tableau-de-bord" href="#"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="font-label-caps text-label-caps uppercase tracking-wider">Bord</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="plans-ia" href="#"><span class="material-symbols-outlined text-[22px]">architecture</span><span class="font-label-caps text-label-caps uppercase tracking-wider">Plans IA</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="inspection" href="#"><span class="material-symbols-outlined text-[22px]">drone</span><span class="font-label-caps text-label-caps uppercase tracking-wider">Inspect</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="finances" href="#"><span class="material-symbols-outlined text-[22px]">receipt_long</span><span class="font-label-caps text-label-caps uppercase tracking-wider">Finances</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="stock" href="#"><span class="material-symbols-outlined text-[22px]">inventory_2</span><span class="font-label-caps text-label-caps uppercase tracking-wider">Stock</span></a></div></nav></body></html>
